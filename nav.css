@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Media Queries */
+@media (min-width:769px){
+ .main-header,
+ .main-nav{
+    display:flex;
+ }
+ .main-nav{
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: flex-end;
+ }
+}
+@media (min-width:1025px){
+ .main-header{
+    flex-direction:row;
+    justify-content: space-between;
+}
+}
+#mail,#password, #bio, #button, #job, #user_age, #under_13, #above_13{
+    margin-top: 10px;
+}
+#bio, #above_13, #design{
+    margin-bottom: 10px;
+}

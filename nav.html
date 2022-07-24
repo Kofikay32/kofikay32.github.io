@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title> Flex Box Nav Bar</title>
+    <link rel="stylesheet" href="nav.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1"
+   </head>
+    <body>
+        <header class="main-header">
+            <div>    
+                <h1 class="name"><a href="#">Litcoin Web </a></h1>
+                <ul calss="main-nav">
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#">About Us</a></li>
+                 <li><a href="#">Contact Us</a></li>
+                 <li><a href="#">Free Quote</a></li>
+                </ul>
+         </div> 
+        </header>
+        <main>
+            <div>
+                <form>
+                    <h1> Sign Up</h1>
+                    <fieldset>
+                        <legend><span class="number 1"></span>Your Profile</legend>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="user_name">
+                        <br>
+
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" name="user_email">
+                        <br>
+                       <!-- For in Label conncets with the id -->
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="user_password">
+                    </fieldset>   
+                    <fieldset>
+                        <legend><span class="number 2"></span>Your Basic Info</legend>
+                        <br>
+                        <!-- EXAMPLE OF rADIO bUTTO0NS -->
+                        <label id="user_age">Age</label><br>
+                        <input type="radio" id="under_13" value="under_13" name="user_age"> <label for="under_13" class="age_radio">Under 13</label><br>
+                        <input type="radio" id="above_13" value="above_13" name="user_age"> <label for="above_13" class="age_radio">Above 13</label><br>
+                        
+                        <!-- example of Checkboxes -->
+                        <label>Interests</label><br>
+                        <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="interest" for="development">Development</label>
+                        <br>
+                        <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="interest" for="design">Design</label>
+                        <label for="bio">Biography</label>
+                        <br>
+                        <textarea id="bio" name="user_bio"></textarea>
+                        <br>
+                        <label for="job">Job</label>
+                        <!-- this gives you an option to choose form a drop down  -->
+                        <br>
+                        <select id="job" name="user_job">
+                            <optgroup label="Web Design">
+                                <option value="Front End Dev">Front End Dev</option>
+                                <option value="PHP Dev">PHP  Dev</option>
+                                <option value="Python End Dev">Python Dev</option>
+                                <option value="Rails Dev">Rails Dev</option>
+                            </optgroup> 
+                            <optgroup label="Backend">
+                                <option value="Django Dev">Django Dev</option>
+                                <option value="Flask Dev">Flask Dev</option>
+                                <option value="React Dev">React Dev</option>
+                                <option value="Angular Dev">Angular Dev</option>
+                                <option value="Freelance Dev">Freelance Dev</option>
+                            </optgroup>   
+                        </select>
+                    </fieldset>
+                    <button type="submit" id="button">Sign Up</button>
+                </form>
+             </div>
+
+        </main>
+        <footer>
+            <p><small>Designed with &#128151; by Kofi Koranteng &copy;Litcoin Web Services All Right Reserved</small></p>
+        </footer>
+
+    </body>
+</html>
