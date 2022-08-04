@@ -28,3 +28,8 @@ body{
 #bio, #above_13, #design{
     margin-bottom: 10px;
 }
+
+ /* example of a attribute  selectors */
+[class]{
+  color:red;
+}
